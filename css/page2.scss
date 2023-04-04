@@ -1,0 +1,109 @@
+$color1: #FFF;
+$color2: #272727;
+$color3: #FCD54C;
+
+.bread{
+    padding-top: 30px;
+    padding-bottom: 109px;
+    font-family: 'Work Sans';
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 405px;
+    a{
+        color: $color1;
+        text-decoration: none;
+    }
+    a:hover{
+        color: $color3;
+        transition: 0.6s;
+    }
+    span{
+        color: #929292;
+        cursor: pointer;
+    }
+}
+
+.main{
+    h1{
+        color: $color1;
+        font-family: 'Gilroy Bold';
+        font-size: 60px;
+        line-height: 75px;
+        padding-left: calc(405px - 60px);
+        padding-bottom: 90px;
+    }
+
+    .map{
+        border: 1px solid $color2;
+        height: 768px;
+        width: 1800px;
+        overflow: auto;
+
+        iframe{
+            width: 100%;
+            height: 120%;
+        }
+    }
+}
+
+.input-info{
+    padding-left: 405px;
+    padding-bottom: 157px;
+    padding-top: 211px;
+    
+    h2{
+        color: $color3;
+        font-family: 'Gilroy Bold';
+        font-size: 32px;
+        line-height: 35px;
+        padding-bottom: 71px;
+        width: calc(572px - 405px);
+
+        span{
+            color: $color1;
+        }
+    }
+
+    .inp{
+        display: grid;
+        grid-template-columns: 350px 350px 350px;
+        column-gap: 30px;
+        grid-template-rows: 50px 218px;
+        row-gap: 30px;
+        margin-bottom: calc(30px + 14px);
+
+        input:nth-child(1),
+        input:nth-child(2),
+        input:nth-child(3){
+            background-color: #272727;
+            border: 1px solid #C9C9C9;
+            color: #929292;
+            font-family: 'Work Sans';
+            font-size: 16px;
+            line-height: 19px;
+            padding-left: 18px;      
+        }
+        input:nth-child(4){
+            grid-column: 1/4;
+            background-color: #272727;
+            border: 1px solid #C9C9C9;
+            color: #929292;
+            font-family: 'Work Sans';
+            font-size: 16px;
+            line-height: 19px;
+            padding-left: 27px;
+        }
+    }
+
+    a{
+        text-decoration: none;
+        background-color: #FCD54C;
+        padding: 13px 42px;
+        color: $color2;
+        font-family: 'Work Sans';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        
+    }
+}
